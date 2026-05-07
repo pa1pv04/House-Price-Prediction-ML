@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Predictor</title>
+</head>
 
+<body>
+
+    <h1>House Price Predictor</h1>
+
+    <form action="/predict" method="post">
+
+        <input type="number" name="area" placeholder="Area"><br><br>
+
+        <input type="number" name="bedrooms" placeholder="Bedrooms"><br><br>
+
+        <input type="number" name="bathrooms" placeholder="Bathrooms"><br><br>
+
+        <input type="number" name="stories" placeholder="Stories"><br><br>
+
+        <input type="number" name="mainroad" placeholder="Mainroad (1/0)"><br><br>
+
+        <input type="number" name="guestroom" placeholder="Guestroom (1/0)"><br><br>
+
+        <input type="number" name="basement" placeholder="Basement (1/0)"><br><br>
+
+        <input type="number" name="hotwaterheating" placeholder="Hotwater Heating (1/0)"><br><br>
+
+        <input type="number" name="airconditioning" placeholder="Airconditioning (1/0)"><br><br>
+
+        <input type="number" name="parking" placeholder="Parking"><br><br>
+
+        <input type="number" name="prefarea" placeholder="Preferred Area (1/0)"><br><br>
+
+        <input type="number" name="furnishingstatus" placeholder="Furnished=2 Semi=1 Unfurnished=0"><br><br>
+
+        <button type="submit">Predict Price</button>
+
+    </form>
+
+    <h2>{{ prediction_text }}</h2>
+
+</body>
+</html>
