@@ -1,56 +1,144 @@
-# House Price Prediction using Machine Learning
+#  House Price Prediction using Machine Learning
 
-This project is a Machine Learning based web application designed to predict house prices based on various property features such as area, number of bedrooms, bathrooms, stories, parking availability, furnishing status, and other amenities.
+A Machine Learning based web application that predicts house prices based on various property features such as area, number of bedrooms, bathrooms, stories, parking availability, furnishing status, and other amenities.
 
-The application uses a Random Forest Regression model trained on a housing dataset to provide accurate price predictions. Users can enter property details through a simple and interactive web interface, and the system instantly predicts the estimated house price.
+The application uses a **Random Forest Regression** model trained on housing data to provide accurate price predictions through a simple and interactive web interface built with Flask.
 
-## Features
+---
+
+##  Features
+
 - Predicts house prices in real time
-- User-friendly web interface built with Flask
+- User-friendly web interface using Flask
 - Data preprocessing and feature encoding
 - Machine Learning model training and evaluation
 - Model saving and loading using Joblib
+- Fast and interactive prediction system
 
-## Tech Stack
+---
+
+##  Technologies Used
+
 - Python
 - Flask
 - Scikit-learn
 - Pandas
 - NumPy
 - HTML
+- Joblib
 
-## Project Structure
+---
 
+##  Project Structure
+
+```bash
 House-Price-Prediction/
 │
-├── app.py  
-├── train_model.py  
-├── model.pkl  
-├── Housing.csv  
-├── README.md  
+├── app.py
+├── train_model.py
+├── model.pkl
+├── Housing.csv
+├── README.md
 │
-└── templates/  
-    └── index.html  
+└── templates/
+    └── index.html
+```
 
-## Installation & Setup
-1. Clone the repo
+---
+
+##  Installation & Setup
+
+### 1️ Clone the Repository
+
 ```bash
 git clone YOUR_GITHUB_LINK
+```
 
-Install Required Libraries
+---
+
+### 2️ Install Required Libraries
+
+```bash
 pip install -r requirements.txt
+```
 
-3. Train the Model
+---
+
+### 3️ Train the Model
+
+```bash
 python train_model.py
+```
 
-4. Run the Flask Application
+---
+
+### 4 Run the Flask Application
+
+```bash
 python app.py
+```
 
-5. Open in Browser
+---
+
+### 5️ Open in Browser
+
+```text
 http://127.0.0.1:5000
+```
 
-Machine Learning Model
-Random Forest Regressor
+---
 
-Author
-Pavan Kumar Balla
+##  Machine Learning Model
+
+This project uses:
+
+### Random Forest Regressor
+
+The model is trained on housing data to predict house prices based on user inputs and property features.
+
+---
+
+##  Input Features
+
+The model predicts house prices using features like:
+
+- Area
+- Bedrooms
+- Bathrooms
+- Stories
+- Parking
+- Furnishing Status
+- Main Road Access
+- Air Conditioning
+- Preferred Area
+- Guest Room Availability
+
+---
+
+##  Learning Outcomes
+
+Through this project, I learned:
+
+- Machine Learning model training
+- Regression algorithms
+- Data preprocessing and encoding
+- Building web applications using Flask
+- Model deployment basics
+- Handling user inputs in web forms
+- Saving and loading ML models using Joblib
+
+---
+
+##  Future Improvements
+
+- Improve UI design
+- Deploy the application online
+- Add more advanced prediction models
+- Use larger real-world datasets
+- Add data visualization dashboards
+
+---
+
+##  Author
+
+**Pavan Kumar Balla**
